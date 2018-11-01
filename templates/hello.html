@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+    <head>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <ul id="navigation">
+            {% for item in navigation %}
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% endfor %}
+        </ul>
+        <h1>flask2</h1>
+        <a>ec2-13-125-217-8.ap-northeast-2.compute.amazonaws.com:8000</a>
+    </body>
+</html>
